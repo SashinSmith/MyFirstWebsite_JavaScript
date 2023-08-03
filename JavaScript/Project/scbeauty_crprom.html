@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Snip 'n Cut Beauty Salon</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet" media="screen and (max-width: 960px)">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="logo.png" width="100" height="80" class="logo" alt="">
+            <h1>Snip 'n Cut Beauty Salon</h1>
+        </header>
+
+        <nav>
+            <ul id="myNav">
+                <li><a href="scbeauty_homepage.html">Home</a></li>
+                <li><a href="scbeauty_signprom.html">Sign-up Promotion</a></li>
+                <li class="current"><a href="scbeauty_crprom.html">Create Promotion</a></li>
+                <li><a href="scbeauty_student.html">Disciplinary Code</a></li>
+            </ul>
+        </nav>
+
+
+
+        <section id="col1">
+            <article>
+                <h2>Create Promotion:</h2>
+                <h3>Promotion Details</h3><br>
+                <form id="myForm1">
+                    <label for="Pname">Promotion name:</label>
+                    <input type="text" id="Pname" name="Pname"><br><p id="messPN" class="error"></p>
+                    <label>Please enter your short message:</label><br>
+                    <textarea id="message" rows="3" cols="80">Your text here</textarea><br>
+                    <label for="Ptime">Time:</label>
+                    <input type="text" id="Ptime" name="Ptime"><br><p id="messT" class="error"></p>
+                    <label for="Pdate">Date:</label>
+                    <input type="text" id="Pdate" name="Pdate"><br><p id="messD" class="error"></p>
+                    <label>Please select the duration:</label><br>
+                    <input type="radio" id="duration1" name="duration" value="1">
+                    <label for="duration1">1 Day</label><br>
+                    <input type="radio" id="duration2" name="duration" value="2">
+                    <label for="duration2">2 Days</label><br>
+                    <input type="radio" id="duration3" name="duration" value="3">
+                    <label for="duration3">3 Days</label><br><p id="messDu" class="error"></p>
+                    <lable for="Pvenue">Venue:</lable>
+                    <select id="Pvenue" name="venue">
+                        <option value="home">Home visit</option>
+                        <option value="onSite">At Salon</option>
+                    </select><br>
+                    <lable for="Pprom">Promotion:</lable>
+                    <select id="Pprom" name="Promotion">
+                        <option value="nails">Nails</option>
+                        <option value="massage">Massage</option>
+                        <option value="hair">Hair</option>
+                    </select><br>
+                </form>
+
+                <h3>Prices and Services</h3><br>
+                <form id="myForm2">
+                    <input type="radio" id="service1" name="service" value="colour">
+                    <label for="service1">Colour</label><br>
+                    <input type="radio" id="service2" name="service" value="massage">
+                    <label for="service2">Massage</label><br>
+                    <input type="radio" id="service3" name="service" value="waxing">
+                    <label for="service3">Waxing</label><br><p id="messS" class="error"></p>
+                    <label for="price">Price of product:</label>
+                    <input type="number" id="price" name="price"><br><p id="messP" class="error"></p>
+                </form>
+
+                <h3>Menue Items</h3><br>
+                <form id="myForm3">
+                    <input type='checkbox' name='menue' value='tea' checked>Tea<br>
+                    <label for="priceM1">Price of product:</label>
+                    <input type="number" id="priceM1" name="priceM"><br><p id="messM0" class="error"></p>
+                    <input type='checkbox' name='menue' value='coffee' checked>Coffee<br>
+                    <label for="priceM2">Price of product:</label>
+                    <input type="number" id="priceM2" name="priceM"><br><p id="messM1" class="error"></p>
+                    <input type='checkbox' name='menue' value='sandwitches' checked>Sandwitches<br>
+                    <label for="priceM3">Price of product:</label>
+                    <input type="number" id="priceM3" name="priceM"><br><p id="messM2" class="error"></p>
+                    <input type='checkbox' name='menue' value='biscuits' checked>Biscuits<br>
+                    <label for="priceM4">Price of product:</label>
+                    <input type="number" id="priceM4" name="priceM"><br><p id="messM3" class="error"></p>
+                </form>
+
+                <h3>Contact Details</h3><br>
+                <form id="myForm4">
+                    <label for="Cname">Contact name:</label>
+                    <input type="text" id="Cname" name="Cname"><br><p id="messNa" class="error"></p>
+                    <label for="Cnum">Contact number:</label>
+                    <input type="text" id="Cnum" name="Cnum"><br><p id="messN" class="error"></p>
+                    <label for="Cemail">Contact email:</label>
+                    <input type="email" id="Cemail" name="Cemail"><br><p id="messE" class="error"></p>
+                </form>
+
+                <button type="reset" value="reset" id="reset">Clear</button>
+                <button type="submit" value="submit" id="submit">Submit</button>
+                <button id="edit">Edit</button>
+                <button id="delete">Delete</button>
+                <button id="btnSummary">Summary</button>
+            </article>
+        </section>
+
+        <section id="col2">
+            <aside>
+                <table>
+                    <caption id="monthCap">June</caption>
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td id="linkMe">4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                </table>
+            </aside>
+        </section>
+
+        <footer>
+            <p class="current">&#9400; Snip 'n Cut Beauty Salon</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
